@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  padding: 1rem
+}
+.text-custom-color {
+  color: #56CDAD;
+  
+}
+.sub-header-color{
+  color: #7C8493;
+
+}
+.custom-background{
+  background: #56CDAD1A;
+}
+
