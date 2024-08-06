@@ -150,7 +150,7 @@ const Description = ({ id }: Props) => {
             <hr className="m-4" />
             <div>
               <h1 className="text-2xl font-bold mb-4">Categories</h1>
-              <div className="flex flex-row gap-4 flex-wrap">
+              <div className="flex flex-row flex-wrap">
                 <Buttons>{data.categories}</Buttons>
               </div>
             </div>
