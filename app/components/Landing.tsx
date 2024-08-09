@@ -23,7 +23,6 @@ const Landing = () => {
         );
         const json_data = await res.json();
         setData(json_data.data);
-        console.log(data);
         return data;
       } catch (error) {
         console.log(error + " ERROR");
@@ -32,9 +31,9 @@ const Landing = () => {
     FetchEntireData(), []
   });
   return (
-    <div className="flex flex-col gap-8">
+    <div className="p-10 flex flex-col gap-8">
       
-      <div className="flex flex-row gap-5 max-w-[950px] justify-between">
+      <div className="flex flex-row gap-5 justify-between">
         <div>
           <div className="text-2xl	font-semibold leading-6 ">Opportunities</div>
           <div className="text-gray-500">Showing {data.length} results</div>
@@ -48,7 +47,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col items-center gap-5">
       <JobListCard data = {data}></JobListCard>
       </div>
     </div>

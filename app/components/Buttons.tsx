@@ -1,7 +1,7 @@
 import React from "react";
 interface Props {
   // inPerson: boolean;
-  children: [];
+  children: string[];
 }
 const Buttons = ({children }: Props) => {
   // const inperson: string = inPerson ? "In Person" : "Virtual";

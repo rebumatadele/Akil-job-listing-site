@@ -31,7 +31,10 @@ export const options = {
         });
 
         const user = await res.json();
-
+        console.log(user)
+        const session = {
+          
+        }
         if (user.success) {
           return user.data; // Return user object if login is successful
         } else {
@@ -49,6 +52,7 @@ export const options = {
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id;         // Assuming the user object has an 'id' field
+        token.accessToken = user.accessToken;
         token.role = user.role;     // Assuming the user object has a 'role' field
         token.email = user.email;   // Assuming the user object has an 'email' field
         token.name = user.name;     // Assuming the user object has a 'name' field
@@ -59,6 +63,7 @@ export const options = {
     async session({ session, token }) {
       session.user.id = token.id;         // Pass user id to session
       session.user.role = token.role;     // Pass user role to session
+      session.user.accessToken = token.accessToken;
       session.user.email = token.email;   // Pass user email to session
       session.user.name = token.name;     // Pass user name to session
 

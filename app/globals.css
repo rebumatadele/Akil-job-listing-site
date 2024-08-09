@@ -14,7 +14,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  padding: 1rem
+  /* padding: 1rem */
 }
 .text-custom-color {
   color: #56CDAD;
