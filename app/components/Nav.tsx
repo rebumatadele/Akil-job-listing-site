@@ -4,7 +4,6 @@ import { getServerSession } from "next-auth";
 import { options } from "../api/auth/[...nextauth]/options";
 const Nav = async () => {
   const session = await getServerSession(options)
-  console.log("Session", session)
   return (
     <div>
       <header className="bg-gray-500 text-gray-100">

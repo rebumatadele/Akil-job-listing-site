@@ -32,7 +32,6 @@ export const options = {
 
         const user = await res.json();
 
-        console.log("User-1", user.data);
         if (user.success) {
           return user.data; // Return user object if login is successful
         } else {

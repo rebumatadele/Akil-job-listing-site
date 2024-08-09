@@ -3,7 +3,10 @@
 This is a web application for browsing job listings. it is implemented with nextjs and tailwindcss. Users can view all available job opportunities, and view detailed information about each job.
 
 ## Features
-
+- HomeScreen
+- Signup page
+- Signin page
+- OTP page
 - Display all job listings
 - View detailed information for each job
 
@@ -11,14 +14,17 @@ This is a web application for browsing job listings. it is implemented with next
 
 ### All Jobs Rendered
 
-![All Jobs Rendered](./screenshots/all%20jobs%20rendered.png)
+![Home Screen](./screenshots/task-8-homepage.png)
 
 ### Job Details Page
 
-![Job Details Page 1](./screenshots/job_detail_1.png)
+![signup page](./screenshots/task-8-signup-page.png)
 
-![Job Details Page 2](./screenshots/job_detail_2.png)
+![signin page](./screenshots/task-8-signin%20page.png)
 
+![OTP page](./screenshots/task-8-otp-page.png)
+
+![Job Listing page](./screenshots/task-8-joblisting-page.png)
 ## Installation
 
 1. Clone the repository:
