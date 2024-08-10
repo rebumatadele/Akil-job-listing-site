@@ -96,12 +96,12 @@ const BookmarkComponent = () => {
     <>
       {items &&
         items.map((item) => (
-          <div
-            className="flex font-sans w-[950px] relative"
-            key={item.eventID}
-          >
+          <div className="flex font-sans w-[950px] relative" key={item.eventID}>
             <Link key={item.eventID} href={`/joblist/${item.eventID}`}>
-              <div className="flex flex-row gap-4 w-[950px] border-2 border-gray-100 shadow-lg px-4 py-4 rounded-3xl ">
+              <div
+                className="flex flex-row gap-4 w-[950px] border-2 border-gray-100 shadow-lg px-4 py-4 rounded-3xl "
+                data-testid={`bookmark-item-${item.eventID}`}
+              >
                 <img
                   src={item.logoUrl}
                   alt="LOGO"
@@ -109,7 +109,7 @@ const BookmarkComponent = () => {
                 />
                 <div className="flex-shrink">
                   <div className="text-2xl font-semibold leading-6">
-                    {item.title}{" "}
+                    {item.title}
                   </div>
                   <div className="flex flex-row gap-4 flex-shrink font-semibold text-base sub-header-color py-1.5">
                     <div>{item.orgName}</div>
@@ -119,10 +119,14 @@ const BookmarkComponent = () => {
                     </div>
                   </div>
 
-                  <article className="py-1.5 text-justify text-wrap flex-shrink">
+                  <article
+                    data-testid="bookmark-date"
+                    className="py-1.5 text-justify text-wrap flex-shrink"
+                  >
                     <span>Bookmarked on : </span>
                     {formatDate(item.dateBookmarked)}
                   </article>
+
                   <div className="flex flex-row gap-2">
                     <span className="h-12 flex items-center self-center text-custom-color font-bold custom-background rounded-3xl px-6">
                       {item.opType === "inPerson" ? "In Person" : "Virtual"}
@@ -133,6 +137,7 @@ const BookmarkComponent = () => {
             </Link>
             <div
               className="absolute top-5 right-5 cursor-pointer"
+              data-testid={`bookmark-icon-${item.eventID}`}
               onClick={(e) => {
                 e.preventDefault(); // Prevent navigating to the link
                 toggleBookmark(item.eventID);

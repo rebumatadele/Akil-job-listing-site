@@ -45,7 +45,6 @@ const Forms = () => {
       const user = await res.json();
 
       if (user.success) {
-        // redirect("./Otp.tsx")
         setOtp(true);
         setDat(newData);
         console.log(user.message);

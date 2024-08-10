@@ -33,28 +33,29 @@ const Bookmark = () => {
         });
         const json_data = await res.json();
         setData(json_data.data);
-        console.log(data);
-        return data;
       } catch (error) {
         console.log(error + " ERROR");
       }
     }
     FetchEntireData();
   }, []);
+
   return (
     <>
       <div className="flex flex-col gap-8">
         <div>
-          <div className="flex justify-center text-5xl	font-black leading-6 h-20 py-10">
+          <div className="flex justify-center text-5xl font-black leading-6 h-20 py-10" data-testid="title">
             My Bookmarks
           </div>
           {data && (
-            <div className="text-gray-500 font-bold text-3xl px-52 mt-20">{data.length} Bookmarks</div>
+            <div className="text-gray-500 font-bold text-3xl px-52 mt-20" data-testid="bookmark-count">
+              {data.length} Bookmarks
+            </div>
           )}
         </div>
         {data && (
           <div className="flex flex-col items-center gap-5">
-            <BookmarkComponent></BookmarkComponent>
+            <BookmarkComponent data-testid="bookmark-component" />
           </div>
         )}
       </div>

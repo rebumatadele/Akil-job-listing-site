@@ -15,6 +15,7 @@ const Contact = () => {
   const { register, control, handleSubmit, formState } = form;
   const { errors } = formState;
   const router = useRouter()
+  
   const onSubmit = async (data: FormValues) => {
     await signIn("credentials", {
       redirect: true,
