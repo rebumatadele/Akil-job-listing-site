@@ -1,30 +1,39 @@
 # Job Listings Web Application
 
 This is a web application for browsing job listings. it is implemented with nextjs and tailwindcss. Users can view all available job opportunities, and view detailed information about each job.
-
+ 
 ## Features
 - HomeScreen
-- Signup page
-- Signin page
+- Signup page and Signin
 - OTP page
 - Display all job listings
 - View detailed information for each job
+- bookmarking
+- deleting and adding to bookmarks
+- Tested using jest
 
 ## Screenshots
 
-### All Jobs Rendered
+### Homepage
 
-![Home Screen](./screenshots/task-8-homepage.png)
+![Home Screen](./screenshots/task-9-homepage.png)
 
 ### Job Details Page
 
-![signup page](./screenshots/task-8-signup-page.png)
-
-![signin page](./screenshots/task-8-signin%20page.png)
+![signup page](./screenshots/task-9-signup.png)
 
 ![OTP page](./screenshots/task-8-otp-page.png)
 
-![Job Listing page](./screenshots/task-8-joblisting-page.png)
+![Job Listing page](./screenshots/task-9-joblist.png)
+
+![Job Detail page](./screenshots/job_detail_1.png)
+
+### Bookmarking
+![My Bookmarks](./screenshots/task-9-myBookmark.png)
+
+### Testing
+![Jest Test Results](./screenshots/task-9-jest-tests.png)
+
 ## Installation
 
 1. Clone the repository:
