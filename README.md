@@ -11,6 +11,7 @@ This is a web application for browsing job listings. it is implemented with next
 - bookmarking
 - deleting and adding to bookmarks
 - Tested using jest
+- Tested using cypress
 
 ## Screenshots
 
@@ -33,6 +34,8 @@ This is a web application for browsing job listings. it is implemented with next
 
 ### Testing
 ![Jest Test Results](./screenshots/task-9-jest-tests.png)
+
+![Cypress Test Results](./screenshots/task-9-cypressTest.png)
 
 ## Installation
 
