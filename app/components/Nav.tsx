@@ -29,7 +29,7 @@ const Nav = async () => {
 
             <Link href="/joblist">Job List</Link>
           </span>
-          <span className="hover:bg-white">
+          <span className="px-6 py-2 rounded-lg hover:bg-white">
 
             {session ? <Link href="/bookmark">Bookmark</Link> : null}
           </span>
